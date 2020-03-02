@@ -1,0 +1,71 @@
+/* Dimensiones en CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.borde-naranja {
+    border: solid 2px orange;
+}
+
+/* ¿Como obtienen sus dimensiones los elementos div?
+- Por defecto el ancho es el total del dispositivo (en bloque)
+  salvo que lo modifiquemos con la propiedad width;
+- Altura la de su contenido ó la que establezcamos con height; */
+
+.padre {
+    background-color: aqua;
+    height: 300px;
+    width: 50%; /* Referido al elemento padre */
+}
+
+.hijo {
+    background-color: brown;
+    height: 200px;
+    width: 33.3333%;
+}
+
+/* Propiedad max-width */
+
+img {
+    max-width: 100%;
+}
+
+/* Propiedad min-width */
+
+.card {
+    width: 33.333333%;
+    min-width: 260px;
+    height: 340px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+/* Desbordamiento en vertical */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    width: 240px;
+    height: 100vh;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.contenedor {
+    position: fixed;
+    top: 0;
+    left: 240px;
+    background-color: lightgrey;
+    width: calc(100% - 240px);
+    padding: 40px;
+}
+
+.cita {
+    width: 400px;
+    white-space: pre;
+    overflow-x: auto;
+}

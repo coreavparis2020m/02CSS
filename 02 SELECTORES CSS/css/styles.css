@@ -19,6 +19,10 @@ li {
     color: crimson;
 }
 
+button {
+    margin: 20px;
+}
+
 /* Selector por clase */
 
 .botonera {
@@ -43,4 +47,11 @@ li {
 
 .primaria:hover {
     background-color: rgb(151, 39, 19);
+}
+
+/* Selector pseudoelemento */
+
+.destacado::first-letter {
+    color: blueviolet;
+    font-size: 30px;
 }

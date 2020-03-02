@@ -1,0 +1,117 @@
+/* Regla at para carga de ficheros de fuentes */
+
+@font-face {
+    font-family: 'brushed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Mighty\ Brush\ Demo.ttf')
+}
+
+/* Tamaños en textos */
+
+/* Dimensiones en CSS 
+Dimensiones absolutas
+    cm, mm, in, etc...
+Dimensiones relativas
+    px, em, rem, %...
+*/
+
+h1 {
+    font-size: 20px;
+}
+
+/* Fuente tipográfica */
+
+/* Fuentes de Google fonts */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Trade Winds', sans-serif;
+}
+
+/* Fuentes propias */
+
+h2 {
+    font-family: 'brushed', sans-serif;
+}
+
+/* Otras propiedades de fuentes */
+
+p.otros {
+    font-style: italic; /* Poner cursiva */
+    font-weight: 900; /* Del 100 al 900 */
+}
+
+/* Colores de fuentes */
+
+/* Tipos de valores de colores en css */
+
+p {
+    color:  #616161;        /* Palabra reservada de color | hex | rgba */
+}
+
+/* Sombreado de texto */
+
+h1.sombreado {
+    /* desplaz. horiz, despl. vert, difuminado, color */
+    text-shadow: 2px 2px 4px red,
+                 -2px 2px 4px blue,
+                 2px -2px 4px green,
+                 -2px -2px 4px yellow;
+}
+
+/* Color de la selección */
+
+p::selection {
+    background-color: pink;
+    color: white;
+}
+
+/* Propiedades de redacción de texto */
+
+p {
+    line-height: 1.5;
+}
+
+/* Los textos por defecto se renderizan alineados a la izquierda */
+
+h1.centrado {
+    /* Alineación left (defecto), center, right, justify */
+    text-align: center;
+}
+
+/* Subrayado de textos */
+
+.subrayado {
+    /* text-decoration-line: underline; Para tachar sería line-through
+    text-decoration-color: crimson;
+    text-decoration-style: wavy; */
+    text-decoration: underline wavy crimson; /* Shorthand */
+}
+
+/* Capitalización */
+
+.mayusculas {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.minusculas {
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.capitalizadas {
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* rtl */
+
+.dcha-a-izda {
+    direction: rtl;
+    font-size: 30px;
+}
