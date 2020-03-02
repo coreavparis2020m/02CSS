@@ -1,0 +1,46 @@
+/* Selectores CSS */
+
+/* Selector universal (reseteo CSS) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector por atributo id */
+
+#logo {
+    box-shadow: 4px 4px 6px tomato;
+}
+
+/* Selector por elemento */
+
+li {
+    color: crimson;
+}
+
+/* Selector por clase */
+
+.botonera {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.primaria {
+    background-color: tomato;
+    color: white;
+}
+
+/* Selector por atributo */
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+/* Selector pseudoclase */
+
+.primaria:hover {
+    background-color: rgb(151, 39, 19);
+}
