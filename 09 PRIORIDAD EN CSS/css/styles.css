@@ -1,0 +1,65 @@
+/* Por la forma de implementación la prioridad es:
+1.- Estilo en línea con el atributo style en el elemento
+2.- Elemento style al inicio de html
+3.- Un archivo externo */
+
+/* p {
+    color: grey;
+} */
+
+/* Prioridad según especificidad */
+
+/* Especificidad básica (prioridad de selectores):
+
+1.- Selectores id (#)
+2.- Selectores clases (.) o pseudoclases (:)
+3.- Selectores elementos (nombre) o pseudoelementos (::) */
+
+p {
+    color: grey;
+}
+
+.texto {
+    color: blue;
+}
+
+#especial {
+    color: violet;
+}
+
+/* Prioridad en combinación de selectores
+
+El navegador calculará el número de especificidad
+del bloque CSS
+
+Cuatro dígitos
+1er Dígito = Número de estilos en línea (atributo style)
+2o Dígito = Número de selectores id
+3er Dígito = Número de clases o pseudoclases
+4o Dígito = Número de elementos o pseudoelementos */
+
+/* 0001 */
+
+li {
+    color: red;
+}
+
+/* 0002 */
+
+p~li {
+    color: purple;
+}
+
+/* 0011 */
+
+ul .verde {
+    color: green;
+}
+
+/* Operador !Important (mala práctica)*/
+
+/* li {
+    color: yellow !important;
+} */
+
+

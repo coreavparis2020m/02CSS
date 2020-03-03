@@ -1,0 +1,40 @@
+.bordes {
+    width: 400px;
+    height: 200px;
+    margin: 40px auto; /* Centrado de elemento único */
+    border: 8px solid orange;
+    /* Estilos disponibles: dotted, dashed, double, ridge, groove,
+       inset, outset */
+}
+
+/* Bordes desiguales */
+
+.bordes2 {
+    width: 400px;
+    height: 200px;
+    margin: 40px auto; /* Centrado de elemento único */
+    border-color: blue red green orange;
+    border-width: 10px 8px 12px 6px;
+    border-style: solid double dashed dotted;
+}
+
+/* Bordes o esquinas redondeadas */
+
+.bordes3 {
+    width: 400px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 40px auto;
+    /* border-radius: 10px; */
+    /* Sup izquierda, sup derecha, inf derecha, inf izquierda*/
+    border-radius: 15px 15px 0 0; 
+}
+
+/* Redondeo total de un elemento */
+
+.avatar {
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    border: 5px solid tomato;
+}

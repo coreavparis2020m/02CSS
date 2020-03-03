@@ -1,0 +1,39 @@
+/* Combinación de selectores */
+
+/* Varios selectores para las mismas reglas (,) */
+
+h1, 
+h2 {
+    color: violet;
+}
+
+/* Varios selectores unidos */
+
+div.texto {
+    color: green;
+}
+
+/* Varios selectores descendientes (espacio en blanco) */
+
+.lista-barbie li {
+    background-color: pink;
+    color: grey;
+}
+
+/* Varios selectores descientes directos (>) */
+
+.contenedor > h1 {
+    color: brown;
+}
+
+/* Varios selectores hermanos en general (~) */
+
+.primogenito ~ .hermano-normal {
+    color: chartreuse;
+}
+
+/* Varios selectores hermano adyacente (+) */
+
+.titulo-primario + p {
+    color: blue;
+}

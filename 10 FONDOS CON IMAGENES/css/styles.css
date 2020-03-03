@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/dresden-4885833_1920\ \(1\).jpg');
+    background-position: center;
+    background-size: cover; /* Escalará para adaptarse al ancho */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.fila {
+    padding: 40px;
+}
+
+.fila p {
+    color: grey;
+    font-size: 20px;
+}
+
+.fila.parallax {
+    padding: 60px;
+    background-image: url('../img/icons8-parapente-80.png'), 
+                      url('../img/landscape-4885035_1920.jpg');
+    background-size: initial, cover;
+    background-attachment: scroll, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 40px 50%, center;
+}
+
+.fila.parallax p {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}

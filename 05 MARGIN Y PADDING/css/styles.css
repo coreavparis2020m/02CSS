@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Márgenes */
+
+.contenedor {
+    width: 50%;
+    height: 200px;
+    background-color: gold;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.contenedor2 {
+    width: 80%;
+    height: 200px;
+    border: solid 8px green;
+    /* margin: 20px 40px;  Margen superior e inferior 20px */
+                      /* Margen derecho e izquierdo 20px */
+    /* margin: 20px 40px 60px;  Margen superior 20px, inferior 60px */
+                            /* y derecha e izquierda 40px; */
+    margin: 20px 40px 60px 80px; /* Superior 20px, derecho 40px, */
+                                 /* inferior 60px e izqdo. 80px */
+}
+
+.contenedor2 p {
+    border: solid 2px violet;
+    margin: 20px; /* todos los lados tienen 20px de margin */
+}
+
+/* Espaciados */
+
+.aviso {
+    font-size: 32px;
+    border: 2px solid red;
+    margin: 60px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+/* Box-sizing */
+
+/* Pendiente para ver con el modelo flex-box */
+
+/* Márgenes negativos */
+
+.franja {
+    background-color: #52b7bd;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.franja img {
+    margin-top: -50px;
+}
+
+.franja p {
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
