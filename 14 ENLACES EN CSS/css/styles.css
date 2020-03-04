@@ -36,5 +36,6 @@ a:visited:hover {
 
 .star-wars:hover {
     box-shadow: 2px 2px 4px red;
+    /* Advertencia compatibilidad */
     cursor: url('../img/icons8-darth-vader.svg'), auto;
 }
