@@ -1,0 +1,39 @@
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Pseudoelemento before (renderiza antes del elemento) */
+
+li::before {
+    content: url('../img/icons8-darth-vader.svg');
+    position: relative;
+    top: 15px;
+    right:12px;
+}
+
+/* Pseudoclases para elementos repetitivos */
+
+/* li:first-child {
+    color: orange; 
+}
+
+li:last-child {
+    color: violet; 
+}
+
+li:nth-child(3) {
+    color: red;
+} */
+
+li:nth-child(odd) {
+    color: violet;
+}
+
+li:nth-child(even) {
+    color: green;
+}

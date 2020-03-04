@@ -1,0 +1,40 @@
+/* Propiedades básicas de enlaces */
+
+body {
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ee82ee; /* Para pisar el color azul
+                     por defecto */
+}
+
+a:hover {
+    color: rgb(182, 101, 182);
+}
+
+a:visited {
+    color: violet; /* Para pisar el color morado
+                    por defecto */
+}
+
+a:visited:hover {
+    color: rgb(182, 101, 182);
+}
+
+/* Ejemplo de selector por atributo para enlaces externos */
+
+[href ^="http"]::after {
+    content: url('../img/external-link.svg');
+    position: relative;
+    top: 3px;
+    left: 5px;
+    margin-right: 5px;
+}
+
+.star-wars:hover {
+    box-shadow: 2px 2px 4px red;
+    cursor: url('../img/icons8-darth-vader.svg'), auto;
+}
