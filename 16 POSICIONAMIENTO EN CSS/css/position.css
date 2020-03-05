@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Position relative (a donde debería estar) */
+
+.caja1 {
+    background-color: green;
+    color: white;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 40px;
+    left: 60px;
+}
+
+.caja2 {
+    background-color: orange;
+    color: white;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+}
+
+/* Posicionamiento fixed (Fijo al dispositivo) */
+
+.caja3 {
+    background-color: tomato;
+    height: 80px;
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
