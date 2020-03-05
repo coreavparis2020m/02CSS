@@ -1,0 +1,66 @@
+/* Propiedad display */
+
+p,
+span {
+    border: 1px solid orange;
+}
+
+.enlinea {
+    display: inline; /* Muestra el elemento en línea 
+                      ocupa el ancho de su contenido 
+                      o se adapta en el caso de los textos
+                      al espacio disponible */
+}
+
+.enbloque {
+    display: block; /* Muestra el elemento en bloque
+                     ocupando todo el ancho disponible y
+                     forzando al navegador a mostrar el
+                     siguiente elemento debajo */
+}
+
+.enlinea-y-bloque {
+    display: inline-block; /* Muestra el elemento en linea siempre
+                           que todo su contenido quepa en el ancho
+                           disponible y en caso contrario pasa a la
+                           siguiente linea */
+}
+
+.caja {
+    height: 150px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.caja.violeta { background-color: violet;}
+.caja.verde { background-color: green;}
+.caja.marron { background-color: brown;}
+
+.caja.apagado {
+    display: none; /* Ni muestra el elemento ni mantiene su
+                      espacio */
+}
+
+/* Propiedad visibility */
+
+.caja.oculto {
+    visibility: hidden; /* No muestra el elemento pero mantiene
+                         su espacio */
+                        /* Alternativa con opacity: 0 */
+}
+
+/* Propiedad float */
+
+img.derecha {
+    float: right;
+    width: 30%;
+}
+
+img.izquierda {
+    float: left;
+    width: 30%;
+}
+
+h1.titulo {
+    clear: both;
+}
