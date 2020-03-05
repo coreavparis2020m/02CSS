@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Propiedades básicos del Modelo Flexbox en horizontal */
+
+.contenedor {
+    border: 2px solid orange;
+    height: 100vh;
+    display: flex; /* Todo su contenido pasa a estar en línea */
+    justify-content: space-around; /*alinea al eje primario*/
+    /* Valores para justify-content
+    - flex-start alinea al principio del eje (por defecto)
+    - center alinea al centro; 
+    - flex-end alinea al final del eje 
+    - space-between alinea los extremos y reparte el espacio sobrante
+    - space-around alinea repartiendo el espacio disponible */
+    align-items: flex-end; /*alinea al eje secundario
+    Valores para align items
+    - flex-start alinea al principio del eje 
+    - center  alinea al centro 
+    - flex-end alinea al final del eje
+    - stretch igualar la altura de los elementos*/
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+}
+
+.azul { background-color: cornflowerblue;}
+.verde { background-color: darkcyan;}
+.roja { background-color: darkred;}
+.morada { background-color: violet;}
+
+/* Ejemplo para valor stretch en horizontal */
+
+.contenedor2 {
+    border: 2px solid orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* valor por defecto */
+}
+
+.texto {
+    width: 150px;
+}
+
+.texto p {
+    color: white;
+    padding: 12px;
+}
