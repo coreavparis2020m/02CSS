@@ -36,3 +36,54 @@
     bottom: 20px;
     left: 20px;
 }
+
+/* Posicionamiento absoluto (Fijo al elemento contenedor) */
+/* Muy importante el contenedor debe tener la propiedad position */
+
+.caja4 {
+    width: 50%;
+    height: 250px;
+    background-color: rgb(194, 194, 194);
+    position: relative;
+    padding: 48px 24px;
+}
+
+.caja5 {
+    width: 30px;
+    height: 30px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.caja6 {
+    width: 120px;
+    height: 40px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+/* Posicionamiento sticky (Mantiene su posición en el documento
+hasta que llega a la posición definida) */
+
+.sticky1 {
+    background-color: limegreen;
+    color: white;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.sticky2 {
+    background-color: violet;
+    color: white;
+    padding: 5px 10px;
+    position: sticky;
+    top: 47px;
+    left: 0;
+}
+

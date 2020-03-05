@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apilado de elementos */
+/* Elementos adyacentes */
+
+.caja1 {
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 100000000;
+}
+
+.caja2 {
+    background-color: coral;
+    height: 600px;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Elementos descendientes */
+
+.franja {
+    width: calc(100% - 40px);
+    height: 150px;
+    background-color: cornflowerblue;
+    position: absolute; /* No puede estar fixed En ese caso sacar 
+                        la imagen del padre y posicionarla fixed también */
+    bottom: 20px;
+    left: 20px;
+    text-align: center;
+}
+
+.franja img {
+   position: fixed; /* Tiene que estar posicionado */
+   margin-top: -70px;
+   z-index: -1; 
+}
