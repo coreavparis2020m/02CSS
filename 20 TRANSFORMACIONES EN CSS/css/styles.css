@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.uno {
+    width: 160px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    color: white;
+    transform: rotate(-90deg)
+}
+
+.dos {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 220, 20);
+    color: white;
+    transition: all 600ms ease-in-out;
+}
+
+.dos:hover {
+    transform: scale(1.5,1.5);
+}
+
+.tres {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 130, 220);
+    color: white;
+    transition: all 600ms ease-in-out;
+}
+
+.tres:hover {
+    transform: skew(30deg, 30deg);
+}

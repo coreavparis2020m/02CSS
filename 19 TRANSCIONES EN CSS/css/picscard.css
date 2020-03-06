@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 380px;
+    width: 300px;
+    min-width: 300px; /* Para que flex no 'estreche' la tarjeta */
+    margin: 2rem;
+    box-shadow: 4px 4px 8px rgb(180, 180, 180);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card img {
+    height: 380px;
+}
+
+.card .texto {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    background-color: rgba(220, 20, 60, 0.50);
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0.5em;
+    /* opacity: 0; */
+    transition: 600ms ease-in-out all;
+}
+
+.card:hover .texto {
+    /* opacity: 1; */
+    bottom: 0;
+}
+
+@media (max-width: 440px) {
+    .card {
+        margin: 1rem;
+    }
+}

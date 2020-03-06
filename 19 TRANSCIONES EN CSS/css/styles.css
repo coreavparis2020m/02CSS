@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.mensaje {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    transition-duration: 1000ms, 500ms;
+    transition-property: width, background-color;
+    /* transition-delay: 300ms; No se suele utilizar*/
+}
+
+.mensaje.sin-curva {
+    transition-timing-function: linear, linear;
+}
+
+.mensaje.con-curva {
+    transition-timing-function: ease-in-out, ease-in-out;
+}
+
+.inicio:hover .mensaje {
+    width: 600px;
+    background-color: blueviolet;
+}
+
