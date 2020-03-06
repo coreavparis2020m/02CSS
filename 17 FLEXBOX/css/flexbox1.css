@@ -52,3 +52,10 @@
     color: white;
     padding: 12px;
 }
+
+/* Propiedad para elementos hijos de flex-box */
+
+.arriba {
+    align-self: flex-start; /* Alinea el elemento
+                           hijo en el eje secundario */
+}

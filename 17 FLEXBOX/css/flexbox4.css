@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fila {
+    display: flex;
+    flex-basis: 150px; /* Ancho de referencia */
+}
+
+.col-1 {
+    padding: 20px;
+    flex-grow: 1; /* Factor de crecimiento */
+}
+
+.col-2 {
+    padding: 20px;
+    flex-grow: 2; /* Factor de crecimiento */
+}
+
+.roja {background-color: #E24E42;}
+.rosa {background-color: #E86E80;}
+.naranja {background-color: #E98000;}
+.verde {background-color: #008F95;}
