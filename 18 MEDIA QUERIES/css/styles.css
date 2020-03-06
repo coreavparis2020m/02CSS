@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Trade Winds', sans-serif;
+    margin: 40px;
+    color: tomato;
+}
+
+img {
+    max-width: 100%;
+}
+
+img.portrait {
+    display: none;
+}
+
+@media (max-width: 440px) { /* Cambia los siguientes bloques CSS */
+                            /* para los tamaños como máximo 440px */
+    img.landscape {
+        display: none;
+    }
+
+    img.portrait {
+        display: initial;
+    }
+
+}
