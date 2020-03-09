@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #5a5a5a;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+form {
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+    box-shadow: 4px 4px 8px grey;
+    border-radius: 1em;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding: 0.5em;
+}
+
+.columna.x2 {
+    flex: 2;
+}
+
+label {
+    font-size: 0.7rem;
+    padding-bottom: 0.3em;
+    color: #008489;
+}
+
+input {
+    font-size: 1rem;
+    color: #5a5a5a;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: solid 1px #008489;
+    background-repeat: no-repeat;
+    background-position: 6px 8px;
+    padding-left: 1.8em;
+}
+
+input:focus {
+    outline: none;
+    background-color: #008489;
+    color: white;
+}
+
+#nombre {
+    background-image: url('../img/user.svg');
+}
+
+#nombre:focus {
+    background-image: url('../img/user-white.svg');
+}
+
+#apellidos {
+    background-image: url('../img/users.svg');
+}
+
+#apellidos:focus {
+    background-image: url('../img/users-white.svg');
+}
+
+#direccion {
+    background-image: url('../img/home.svg');
+}
+
+#direccion:focus {
+    background-image: url('../img/home-white.svg');
+}
+
+#cp {
+    background-image: url('../img/hash.svg');
+}
+
+#cp:focus {
+    background-image: url('../img/hash-white.svg');
+}
+
+#localidad {
+    background-image: url('../img/map-marker.svg');
+}
+
+#localidad:focus {
+    background-image: url('../img/map-marker-white.svg');
+}
+
+select {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    color: #5a5a5a;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: solid 1px #008489;
+    background-image: url('../img/down.svg');
+    background-repeat: no-repeat;
+    background-position: 6px 9px;
+    padding-left: 1.8em;
+}
+
+select:focus {
+    outline: none;
+}
