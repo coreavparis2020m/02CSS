@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes inicio {
+    0% {
+        margin: 0 auto;
+        opacity: 0;
+        }
+    50% {opacity: 1;}
+    100% {
+           margin: 50vh auto 0;
+           background-color: violet;
+           color: white;
+           transform: rotate(360deg);
+        }
+    /* 100% {margin: 0 auto;} */
+}
+
+.bienvenida {
+    margin: 0 auto;
+    font-size: 32px;
+    color: violet;
+    border: violet solid 5px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: inicio;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}

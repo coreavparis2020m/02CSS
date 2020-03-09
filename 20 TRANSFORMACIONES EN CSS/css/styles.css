@@ -1,8 +1,8 @@
-body {
+.contenedor {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
 }
 
 .uno {
@@ -44,4 +44,19 @@ body {
 
 .tres:hover {
     transform: skew(30deg, 30deg);
+}
+
+
+.cuatro {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 133, 20);
+    color: white;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
