@@ -37,6 +37,7 @@ form {
     form {
         width: calc(100% - 1em);
         margin: 0.5em;
+        padding: 0.5em;
     }
 }
 
@@ -70,6 +71,14 @@ form {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 720px) {
+    .columna.enlinea,
+    .columna.justificada {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .columna.x2 {
@@ -216,6 +225,13 @@ button {
     padding: 0.5em 1em;
     border-radius: 0.3em;
     transition: 300ms ease-in-out;
+}
+
+@media (max-width: 720px) {
+    button {
+        margin-top: 1em;
+        width: 100%;
+    }
 }
 
 button:hover {
